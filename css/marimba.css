@@ -1,0 +1,11 @@
+.marimba-key {
+    display: inline-block;
+    width: 50px;
+    height: 150px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 150px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
