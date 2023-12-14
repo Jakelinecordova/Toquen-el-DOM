@@ -1,0 +1,22 @@
+body,html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(6, 5, 5);
+}
+.keyboardmarimba {
+    width: 40em;
+    height: 20em;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.keymarimba{
+    width: 32px;
+    height: 60px;
+    border: 5px solid color(rgb(156, 11, 11));
+    text-align: center;
+    margin: 2px;
+}
