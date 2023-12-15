@@ -53,20 +53,20 @@ li:hover {
     border: 10px solid #c28181;
 }
 /* Desde aqui estilos marimba */
-
-main {
-    width: 50em;
-    height: 23em;
+.container {
+    width: 700px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .marimba-key {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 7em;
+    display: inline-block;
+    width: 32px;
+    height: 150px;
+    border: 1px solid black;
+    text-align:center;
+    line-height: 150px;
     /* position: relative; */
     cursor: pointer;
     background-color: rgb(215, 98, 98);
@@ -78,9 +78,14 @@ main {
     color:rgb(144, 137, 137);
     border-radius: 8px;
 }
-.marimba-key:hover{
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
+#keyDO { width: 40px; height: 100px; }
+#keyRE { width: 40px; height: 140px; }
+#keyMI { width: 40px; height: 180px; }
+#keyFA { width: 40px; height: 210px; }
+#keySOL { width: 40px; height: 240px; }
+#keyLA { width: 40px; height: 260px; }
+#keySI { width: 40px; height: 280px;}
+
 .circle{
     background-color: rgb(230, 166, 166);
     height: 1em;
@@ -88,25 +93,13 @@ main {
     border: rgb(77, 75, 75) solid 0.1em;
     border-radius: 50%;
 }
-/* Establecer anchuras y alturas diferentes para las teclas */
-#keyDO { width: 40px; height: 100px; }
-#keyDO2 { width: 40px; height: 120px; }
-#keyRE { width: 40px; height: 140px; }
-#keyRE2 { width: 40px; height: 160px; }
-#keyMI { width: 40px; height: 180px; }
-#keyMI2 { width: 40px; height: 190px; }
-#keyFA { width: 40px; height: 210px; }
-#keyFA2 { width: 40px; height: 225px; }
-#keySOL { width: 40px; height: 240px; }
-#keySOL2 { width: 40px; height: 250px; }
-#keyLA { width: 40px; height: 260px; }
-#keyLA2 { width: 40px; height: 270px; }
-#keySI { width: 40px; height: 280px; }
-#keySI2 { width: 40px; height: 290px; }
-
+.circle:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 /* Estilos para el efecto de la tecla presionada */
 .marimba-key: active {
     transform: translateY(2px);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
+
 
